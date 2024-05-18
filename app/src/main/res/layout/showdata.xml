@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_shade"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layCircle"
+        >
+
+
+        <ImageView
+            android:src="@drawable/expense"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reason"
+                android:textColor="#000000"
+                android:id="@+id/tvreason"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTotalExpenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDT 0.00"
+                android:textColor="#F44336"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginRight="10dp"
+                    android:background="#80FFEB3B"
+                    android:padding="3dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    />
+
+                <TextView
+                    android:id="@+id/delet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Item"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:background="#F44336"
+                    android:padding="3dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Item"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:background="#F44336"
+                    android:padding="3dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
